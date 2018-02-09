@@ -157,7 +157,7 @@ void MainWindow::on_buttonGenerateHtml_clicked()
         QXmlStreamReader html(&inputFileHtml);
 
         while (!html.atEnd() && !html.hasError())
-            {
+            /*{
                 QXmlStreamReader::TokenType token = html.readNext();
                 if (token == QXmlStreamReader::StartDocument)
                 continue;
@@ -169,7 +169,7 @@ void MainWindow::on_buttonGenerateHtml_clicked()
                     XMLConf.append(parseTd (html));
                     }
                 //ui->textEdit->setText(html.readAll());
-            }
+            }*/
         }
 }
 
